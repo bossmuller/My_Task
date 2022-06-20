@@ -4,8 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My CRUD Task List</title>
+	<title> My Task App </title>
 	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript">
+        function empty()
+        {
+          var x;
+          x = document.getElementById("new-task-input").value;
+          if (x == "") 
+           { 
+              alert("Please enter a task");
+			  return false;
+           };
+        }
+    </script>
 </head>
 <body>
 	<header>
@@ -13,19 +25,24 @@
 		<form name="task_form" id="new-task-form" class="new_task_form">
 			<input type="text" name="new-task-input" class = "task_input" id="new-task-input" placeholder="What do you have planned?" />
 			
-            <input type="submit" id="new-task-submit" class = "task_add" value="Add Task" />
+            <input type="submit" id="new-task-submit" class = "task_add" value="Add Task" onclick="return empty()"/>
 		</form>
 	</header>
 	<main>
 		<section class="task_list">
 			<h2 class = "task_list_header">My Current Tasks</h2>
-
+			
+		
 			<div id="tasks" class="tasks">
-
+			
+				
 			</div>
+			
+		
+		
 		</section>
 	</main>
 
-	<script src="index.js"></script>
+	<script src="index.js"> </script>
 </body>
 </html>
