@@ -8,7 +8,7 @@
             counter++;
             e.preventDefault();
 
-            const task = counter+'. '+input.value;
+            const task = counter+' . '+input.value;
             const task_el = document.createElement('div');
             task_el.classList.add('task');
                         
@@ -66,6 +66,7 @@
 
             task_del_el.addEventListener('click', (e)=>{
                 list_el.removeChild(task_el);
+                counter--;
             });
 
         });
