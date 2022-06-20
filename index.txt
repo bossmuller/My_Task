@@ -1,6 +1,7 @@
 134415-Bossvill Imbosa
 
 
+
 Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
 $ git status
 On branch master
@@ -54,4 +55,23 @@ Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
 To github.com:bossmuller/My_Task.git
    c35c254..da8a87a  master -> master
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git add .
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.txt
+
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git commit -m "Successfully added index.txt"
+[master bcb29ed] Successfully added index.txt
+ 1 file changed, 57 insertions(+)
+ create mode 100644 index.txt
 
