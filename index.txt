@@ -1,0 +1,57 @@
+134415-Bossvill Imbosa
+
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git add .
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   index.js
+
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git touch index.txt
+git: 'touch' is not a git command. See 'git --help'.
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ touch index.txt
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git commit -m "Successfully modified My Task App"
+[master da8a87a] Successfully modified My Task App
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+Bossvill Imbosa@Bossvill MINGW64 ~/Desktop/My_Task (master)
+$ git push
+Enter passphrase for key '/c/Users/Bossvill Imbosa/.ssh/id_rsa':
+Enumerating objects: 15, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.71 KiB | 1.71 MiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:bossmuller/My_Task.git
+   c35c254..da8a87a  master -> master
+
